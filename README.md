@@ -1,1 +1,1 @@
-This project auto generates jave controller code from a SySML state machine and Activity Diagram Using Chatgpt 3.5
+This project auto generates simple java code from a SySML state machine and activity diagram exported to JPEG files Using Chatgpt 3.5
