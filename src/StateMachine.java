@@ -1,11 +1,9 @@
-public class SelectMode public class StateMachine {
+public class StateMachine {
+
 
     // Define states
     enum State {
         SYSTEM_ON,
-        /**
-         *
-         */
         SELECTION_MODE
     }
 
@@ -37,7 +35,7 @@ public class SelectMode public class StateMachine {
         }
     }
 
-    public static class ActModeSelect {
+    public static class SelectMode {
         // Enum representing flight modes
         public enum FlightMode {
             MANUAL,
@@ -45,7 +43,7 @@ public class SelectMode public class StateMachine {
         }
 
         // Constructor
-        public ActModeSelect() {
+        public SelectMode() {
         }
 
         // Method to select flight mode based on the manualMode flag
@@ -67,7 +65,7 @@ public class SelectMode public class StateMachine {
 
         // Main method to test the functionality
         public static void main(String[] args) {
-            ActModeSelect controller = new ActModeSelect();
+            SelectMode controller = new SelectMode();
             FlightMode selectedMode = controller.selectFlightMode(true);
             System.out.println("Selected Flight Mode: " + selectedMode);
 
@@ -75,6 +73,4 @@ public class SelectMode public class StateMachine {
             System.out.println("Selected Flight Mode: " + selectedMode);
         }
     }
-}
-{
 }
